@@ -1,8 +1,8 @@
 { 
   "diffbind_out" : "/raven/u/wangy/nf_atacseq_test/diffbind3_output" ,
-  "organism" : "homo_sapiens" ,
-  "TxDb" : "TxDb.Hsapiens.UCSC.hg38.knownGene",
-  "peakAnno_organism" : "human" ,
-  "annoDb" : "org.Hs.eg.db"
+  "organism" : "mus_musculus" ,
+  "TxDb" : "TxDb.Mmusculus.UCSC.mm10.knownGene",
+  "peakAnno_organism" : "mouse" ,
+  "annoDb" : "org.Mm.eg.db"
   
 }
