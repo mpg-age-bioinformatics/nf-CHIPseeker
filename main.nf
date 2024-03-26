@@ -33,7 +33,7 @@ process chipseeker_R {
   stageOutMode 'move'
 
   when:
-    // ( ! file("${params.project_folder}/tmp/ATACSeqQC.${sample}.Rdata").exists() ) 
+    ( ! file("${params.diffbind_out}/tmp/peakAnno.Rdata").exists() ) 
   
   script:
     """
@@ -52,6 +52,7 @@ if (!dir.exists('${params.diffbind_out}/tmp')) {
 }
 
 stat_results = list()
+if("${params.TxDb}" != ""){
 
 library(${params.TxDb})
 txdb <- ${params.TxDb}
@@ -163,7 +164,7 @@ write.xlsx(DAnno, "annotated_master_table.xlsx", row.names = FALSE)
 } else {
   print("THERE IS NO ANNOTATION DATABASE FOR ${params.organism}")
 }
-save.image("${params.diffbind_out}/peakAnno.Rdata")
+save.image("${params.diffbind_out}/tmp/peakAnno.Rdata")
 sessionInfo()
 
 
