@@ -1,6 +1,6 @@
 # nf-CHIPseeker
 
-The current function is to annoate the peak for the output files from [nf-diffbind](https://github.com/mpg-age-bioinformatics/nf-diffbind?tab=readme-ov-file#for-annotating-the-peaks)
+The current function is to annoate the peak for the output files from diffbind[nf-diffbind](https://github.com/mpg-age-bioinformatics/nf-diffbind?tab=readme-ov-file#for-annotating-the-peaks)
 
 ## Contributing
 
