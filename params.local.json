@@ -1,0 +1,8 @@
+{ 
+  "diffbind_out" : "/tmp/nextflow_atac_local_test/macs_test/diffbind3_output" ,
+  "organism" : "mus_musculus" ,
+  "TxDb" : "TxDb.Mmusculus.UCSC.mm10.knownGene",
+  "peakAnno_organism" : "mouse" ,
+  "annoDb" : "org.Mm.eg.db"
+  
+}
